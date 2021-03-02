@@ -12,5 +12,7 @@ btns.forEach(function (btn) {
     if(styles.contains('decrease')){
       count--;
     }
+    //Change the value to count
+    value.textContent = count;
   });
 });
