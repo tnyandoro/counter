@@ -20,6 +20,10 @@ btns.forEach(function (btn) {
     else{
       count = 0;
     }
+    // Assign a color value to increased value
+    if(count > 0){
+      value.style.color = 'green';
+    }
     //Change the value to count
     value.textContent = count;
   });
