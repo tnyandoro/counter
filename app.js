@@ -9,12 +9,16 @@ const btns = document.querySelectorAll('.btn');
 btns.forEach(function (btn) {
   btn.addEventListener('click', function(e){
     const styles = e.currentTarget.classList;
-    // Decrease the value
+    // Decreasing the value
     if(styles.contains('decrease')){
       count--;
     }
+    // Icreasing the value
     else if(styles.contains('increase')){
       count++;
+    }
+    else{
+      count = 0;
     }
     //Change the value to count
     value.textContent = count;
